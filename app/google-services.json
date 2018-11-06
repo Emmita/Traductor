@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "814347774169",
+    "firebase_url": "https://sistemas-inteligentes-fbb9e.firebaseio.com",
+    "project_id": "sistemas-inteligentes-fbb9e",
+    "storage_bucket": "sistemas-inteligentes-fbb9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814347774169:android:4787f4a41232a46e",
+        "android_client_info": {
+          "package_name": "com.emmita.traductor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814347774169-vabms078qnb9s5kt1i8pgvee2ki1vs77.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6ZIG0Zx5e6ELt8pohshgsZPHye0qofr8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
