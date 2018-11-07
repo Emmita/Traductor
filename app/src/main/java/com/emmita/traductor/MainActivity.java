@@ -21,7 +21,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.emmita.traductor.Models.LanguageResponse;
 import com.emmita.traductor.Models.TranslateResponse;
 import com.emmita.traductor.Retrofit.Api;
 import com.emmita.traductor.Retrofit.ApiService;
@@ -43,15 +42,11 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageView;
     TextView original_txt;
     TextView translated_txt;
-    private Button btn_camera;
+    Button btn_camera;
     Bitmap bitmap;
     String txtFromImg;
     String lang;
-    String first_lang;
-    String second_lang;
-
     ApiService service;
-    Call<LanguageResponse> languageResponseCall;
     Call<TranslateResponse> translateResponseCall;
 
     @Override
@@ -71,9 +66,6 @@ public class MainActivity extends AppCompatActivity {
         btn_camera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-//                getLanguage(Api.KEY, original_txt.toString());
-//                translateText(Api.KEY, original_txt.toString(), "es-en");
 
 
                 original_txt.setVisibility(View.INVISIBLE);
@@ -186,19 +178,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void dialogTransalte(){
-
-        final String[] langs = {"Español", "Inglés"};
-        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_spinner_item, langs);
-        final Spinner spinner = new Spinner(MainActivity.this);
-     //   spinner.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-        spinner.setAdapter(adapter);
-
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
 
-        builder.setTitle("Traducir texto a español");
+        builder.setTitle("Traducir texto a inglés");
         builder.setMessage("Por favor selecciona el botón siguiente para traducir el texto");
-//        builder.setView(spinner);
-
         builder.setPositiveButton("Siguiente", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
