@@ -1,4 +1,4 @@
-package com.emmita.traductor;
+package com.emmita.traductor.Models;
 
 import com.google.gson.annotations.SerializedName;
 

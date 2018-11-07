@@ -1,7 +1,7 @@
 package com.emmita.traductor.Retrofit;
 
-import com.emmita.traductor.LanguageResponse;
-import com.emmita.traductor.TranslateResponse;
+import com.emmita.traductor.Models.LanguageResponse;
+import com.emmita.traductor.Models.TranslateResponse;
 
 import retrofit2.Call;
 import retrofit2.http.POST;
